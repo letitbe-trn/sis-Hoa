@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLL Vietnam - Key Risk Areas Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">JLL Vietnam</div>
+                </div>
+                <div class="header-title">
+                    <h1>CÁC LĨNH VỰC RỦI RO CHÍNH</h1>
+                    <p class="subtitle">Key Risk Areas - Valuation Risk Management Framework</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-phase="onboarding">
+                    GIAI ĐOẠN TIẾP NHẬN KHÁCH HÀNG
+                    <span class="tab-count">(13)</span>
+                </button>
+                <button class="tab-btn" data-phase="valuation">
+                    GIAI ĐOẠN ĐỊNH GIÁ VÀ BÁO CÁO
+                    <span class="tab-count">(15)</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search & Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Tìm kiếm theo từ khóa...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-risk="all">Tất cả</button>
+                    <button class="filter-btn" data-risk="high">
+                        <span class="risk-dot risk-high"></span>
+                        Cao
+                    </button>
+                    <button class="filter-btn" data-risk="medium">
+                        <span class="risk-dot risk-medium"></span>
+                        Trung bình
+                    </button>
+                    <button class="filter-btn" data-risk="low">
+                        <span class="risk-dot risk-low"></span>
+                        Thấp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Cards Grid -->
+    <main class="main-content">
+        <div class="container">
+            <div id="cardsGrid" class="cards-grid">
+                <!-- Cards will be dynamically generated here -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>Không tìm thấy kết quả phù hợp</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="risk-legend">
+                    <h3>Chú giải mức độ rủi ro:</h3>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="risk-dot risk-high"></span>
+                            <span>Cao (High Risk)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="risk-dot risk-medium"></span>
+                            <span>Trung bình (Medium Risk)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="risk-dot risk-low"></span>
+                            <span>Thấp (Low Risk)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-notice">
+                    <p><strong>CHỈ DÀNH CHO NỘI BỘ (INTERNAL ONLY)</strong></p>
+                    <p>&copy; 2025 JLL Vietnam. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
